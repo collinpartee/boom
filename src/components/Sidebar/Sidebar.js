@@ -1,21 +1,20 @@
-// @flow
 import React, { Component } from 'react';
-import type { Node } from 'react';
 import glamorous from 'glamorous';
 
-type Props = {
-  children?: Node,
-};
 
-const MySidebar = glamorous.div({
-  backgroundColor: 'gray',
-  height: '100%'
-});
 
-class Sidebar extends Component<Props> {
+class Sidebar extends Component {
   render() {
+
+    const MySidebar = glamorous.div({
+      backgroundColor: 'gray',
+      height: 'auto',
+      width: '5em',
+      transform: this.props.toggle === 'open' ? 'translateX(-100%)' : 'translateX(0)'
+    });
+
     return (
-      <MySidebar>
+      <MySidebar className={`${this.props.columnSize} columns`} css={this.props.css}>
         {this.props.children}
         </MySidebar>
     );
