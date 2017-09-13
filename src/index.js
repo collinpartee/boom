@@ -1,9 +1,21 @@
-// @flow
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Layout from './components/Layout/Layout';
+import React from "react";
+import ReactDOM from "react-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
+import Container from "./components/LayoutComponents/Container/Container";
+import Layout from "./components/Layout/Layout";
+import "./styles/skeleton.css";
 
 ReactDOM.render(
-  <Layout />,
-  document.getElementById('root')
+  <Router basename="/app">
+     <Container css={{ height: "100vh" }}>
+      <Switch>
+        <Route path='/' render={props => <Layout {...props} />} />
+      </Switch>
+  </Container>
+</Router>,
+  document.getElementById("root")
 );

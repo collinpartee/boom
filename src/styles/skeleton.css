@@ -159,10 +159,12 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
-
+  color: rgba(255,255,255, 0.6);
+  text-decoration: none; }
+  a:hover, a.active {
+      color: rgba(255,255,255, 1);
+      font-weight: bold;
+  }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
