@@ -1,26 +1,39 @@
 {
-  "name": "named-gender",
-  "version": "0.1.0",
+  "name": "boom",
+  "version": "0.0.1",
+  "description": "dashboard boilerplate in react",
+  "keywords": [
+    "react",
+    "glamor",
+    "glamorous",
+    "dashboard",
+    "boilerplate"
+  ],
   "private": true,
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "events": "^1.1.1",
+    "express": "^4.15.2",
     "flow-bin": "^0.53.1",
     "glamor": "^2.20.24",
     "glamorous": "^3.1.0",
+    "history": "^2.1.2",
+    "lodash": "^4.17.4",
+    "q": "^1.5.0",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
-    "typography": "^0.16.4",
-    "typography-theme-lincoln": "^0.15.11",
-    "typography-theme-noriega": "^0.15.10"
+    "react-icons": "^2.2.5",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.2.2",
+    "typography": "^0.16.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "flow": "flow"
+    "eject": "react-scripts eject"
   }
 }
